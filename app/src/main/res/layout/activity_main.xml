@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.ac.iiitmanipur.iiitm.MainActivity">
+
+<!--Toolbar customized-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff9800"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+<!--Complete Linear layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:orientation="horizontal"
+        android:layout_below="@id/my_toolbar"
+        android:layout_above="@id/bottom">
+
+<!--base for social media link-->
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:background="#eeeeee">
+         </LinearLayout>
+
+<!--vertical border line after social media links-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="#bdbdbd"
+            />
+
+<!--remaining portion after social media-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#eeeeee">
+
+         <!--All 6 buttons including notification view   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+               <!--1st horizntal row of 3 buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mail"
+                    android:onClick="composeEmail"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/people"
+                    android:onClick="show_people"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:src="@drawable/location"
+                    android:onClick="show_map"/>
+                </LinearLayout>
+
+                <!--notification view-->
+                <TextView
+                    android:text="@string/Notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:background="#2e7d32"
+                    android:textSize="13sp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="@android:color/background_light" />
+
+
+                <!--last horizontal row of three buttons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:background="#ff9800">
+                    <Button
+                        android:id="@+id/wings"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Wings"
+                        android:textColor="#1a237e"
+                        android:background="#ff9800"
+                        android:onClick="wings"/>
+                    <Button
+                        android:id="@+id/about"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ff9800"
+                        android:text="About"
+                        android:textColor="#1a237e"
+                        android:onClick="about_iiit"/>
+                    <Button
+                        android:id="@+id/admission"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ff9800"
+                        android:text="Admission"
+                        android:textColor="#1a237e"
+                        android:onClick="admission"/>
+                </LinearLayout>
+                <!--giving a thin line below the last three buttons-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#e0e0e0"/>
+
+            </LinearLayout>
+
+<!--variable text view-->
+        <ScrollView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+        <TextView
+            android:id="@+id/variable_text"
+            android:text="@string/About_IIITm"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:textIsSelectable="true"
+            android:background="#ffffff"
+
+            />
+
+        </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--//adding social media link-->
+    <ImageButton
+        android:id="@+id/fb"
+        android:contentDescription="fb"
+        android:layout_centerVertical="true"
+        android:layout_width="35dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fb"
+        android:scaleType="centerInside"
+        android:background="#eeeeee"
+        android:onClick="open_fb"/>
+    <ImageButton
+        android:id="@+id/website"
+        android:layout_width="40dp"
+        android:contentDescription="website"
+        android:layout_height="60dp"
+        android:src="@drawable/iiitm"
+        android:scaleType="centerInside"
+        android:layout_above="@id/fb"
+        android:background="#eeeeee"
+        android:onClick="open_web"
+        />
+    <ImageButton
+        android:id="@+id/youtube"
+        android:layout_width="40dp"
+        android:contentDescription="youtube"
+        android:layout_height="60dp"
+        android:src="@drawable/youtube"
+        android:scaleType="centerInside"
+        android:layout_below="@id/fb"
+        android:background="#eeeeee"
+        android:onClick="open_youtube"
+        />
+
+<!--//giving a thin light gray color at bottom-->
+    <View
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_height="3dp"
+        android:layout_above="@id/bottom"/>
+<!--//giving a hindi text view-->
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/in_hindi"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#ff9800"  />
+</RelativeLayout>

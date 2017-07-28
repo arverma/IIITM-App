@@ -1,0 +1,37 @@
+<resources>
+     <string name="About_IIITm">
+         <!--<font fgcolor="#616161">-->
+<b>Indian Institute of Information Technology Manipur</b> has been set up in order to develop Manipur as preferred destination for Information technology related manpower and industry. This shall enable Manipur to gear up for providing
+IT related services as well as high-quality R\u0026D. It is operating from its transit campus located at Mantripukhri,
+adjacent to IT SEZ park in Imphal. The transit campus is provided with all required facilities and infrastructure.\n\n
+Mentored by <b>IIT Guwahati</b>, Interim Director Prof.  <a href="http://www.iitg.ac.in/design/portfolio/akd/index.html"><u>Amarendra Kumar Das</u></a> and <a href="http://www.iiitmanipur.ac.in/pages/faculty.html"><u>faculties</u></a> are actively working for overall development of the institute.
+It is also mandated to start Design and Manufacturing disciplines to positively contribute to Govt. of India mission of Act East and creating manufacturing hub in South East Asia.
+To contribute to Human Resource development of its neighboring countries, <b>IIIT Manipur</b> will be looking for opportunities to spread IT education to Myanmar by providing required facilities to students of that country to study in <b>IIIT Manipur</b> through bi-lateral agreements.
+        <!--</font>-->
+    </string>
+
+     <!--title in hindi-->
+     <string name="in_hindi">
+      भारतीय सूचना प्रौद्योगिकी संस्थान, मणिपुर
+     </string>
+
+     <!--input text for admission-->
+     <string name="admission">
+         <!--<font fgcolor="#616161">-->
+       Admission Procedure Admission to <b>IIIT Manipur</b> will be purely on the basis of the All-India JEE (Main) examination administered by CBSE and the seat allocation will be through Joint Seat Allocation Authority (JoSAA 2016). Candidates are required to qualify through JEE (Main) 2016 and students aspiring to
+       join <b>IIIT Manipur</b> have to apply through JoSAA 2017. \n\nFor queries \ncall: <u>+91-7578001822</u>\n Email - <a href="mailto:v.aman@iiitmanipur.ac.in?subject=Admission%20related%20query">Dr Nagesh Ch(Ph D)\nAssistant Professor (ECE)</a>
+         <!--</font>-->
+     </string>
+
+     <!--input text for wings-->
+     <string name="wings">
+         <!--<font fgcolor="#616161">-->
+      <b>IIIT Manipur</b> has its undergraduate degree courses in two disciplines:\n\n <a href="http://www.iiitmanipur.ac.in/pages/cseAcademic.html"><u>Computer Science and Engineering</u></a> (CSE) \n\n<a href="http://http://www.iiitmanipur.ac.in/pages/eceAcademic.html"><u>Electronics and Communication Engineering</u></a> (ECE)
+    <!--</font>-->
+     </string>
+
+    <string name="Notification">
+        The aim of argument, or of discussion, should not be victory, but progress.
+    </string>
+
+</resources>
